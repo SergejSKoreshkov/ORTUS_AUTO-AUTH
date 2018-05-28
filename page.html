@@ -1,0 +1,120 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <style>
+        .main
+        {
+          background-color: white;
+          width: 150px;
+        }
+        .logo
+        {
+          width: 100%;
+          margin: 0%;
+        }
+        .main-form
+        {
+          width: 100%;
+          border-radius: 3px;
+          border-top: 5px solid #b72e91;
+          border-bottom: 5px solid #ccd513;
+          padding-top: 7%;
+          padding-bottom: 7%;
+          display: block;
+        }
+        .input
+        {
+          width: 90%;
+          border: none;
+          background-color: #f3f3f394;
+          border-radius: 3px;
+          margin-top: 3%;
+          padding: 5% 0% 5% 0;
+          transform: translateX(5%);
+          text-align: center;
+          transition: 0.2s all;
+          box-shadow: inset 0px 1px 5px -2px black;
+        }
+        .input:hover
+        {
+          box-shadow: 0 0 1px 1px #006b67;
+        }
+        .input:focus
+        {
+          box-shadow: 0 0 2px 2px #006b67;
+          outline: none;
+        }
+        .input-btn
+        {
+          width: 90%;
+          border: none;
+          background-color: #006b67;
+          color: white;
+          border-radius: 3px;
+          margin-top: 3%;
+          padding: 5% 0% 5% 0;
+          transform: translateX(5%);
+          text-align: center;
+          transition: 0.2s all;
+        }
+        .input-btn:hover
+        {
+          background-color: #8f9c96;
+        }
+        .input-btn2
+        {
+          border: none;
+          border: none;
+          background-color: #006b67;
+          color: white;
+          border-radius: 3px;
+          /* margin-right: 50%; */
+          /* transform: translateX(50%); */
+          margin-top: 5%;
+          text-align: center;
+          transition: 0.2s all;
+          font-size: 100%;
+          margin: 5%;
+        }
+        .input-btn2:hover
+        {
+          background-color: #8f9c96;
+        }
+        hr
+        {
+          margin-top: 15%;
+          margin-bottom: 0;
+        }
+        p
+        {
+          font-size: 80%;
+          color: gray;
+          margin-top: 0;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="main">
+        <img class="logo" src="https://id2.rtu.lv/openam/images/logo_lv.png" id="img"></img>
+        <div class="main-form" id="form1">
+        <form>
+          <input class="input" type="password" id="pin" placeholder="PIN" required autocomplete="off"></input>
+        </form>
+       <!-- <button class="input-btn" value="Log In" id="loginbtn">Sign In</button> -->
+        <button class="input-btn2" value="Log In" id="delete">Delete data</button>
+      </div>
+        <div class="main-form" id="form2">
+        <form>
+          <input class="input" type="text" id="login" placeholder="Login" required></input>
+          <input class="input" type="password" id="password" placeholder="Password" required></input>
+          <input class="input" type="text" id="pin1" placeholder="Chose PIN" required></input>
+        </form>
+        <button class="input-btn" value="Save" id="save">Save</button>
+        </div>
+        <hr>
+        <p>Developer: Sergej Koreshkov</p>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="script.js"></script>
+    </body>
+  </html>
